@@ -42,8 +42,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch",
+    "build": "node init && tsup",
+    "build:watch": "node init && tsup --watch",
     "prepublishOnly": "npm run build",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -59,10 +59,18 @@
     "@ledgerhq/hw-transport-webusb": "^6.29.0"
   },
   "peerDependenciesMeta": {
-    "albedo-wallet-sdk": { "optional": true },
-    "@ledgerhq/hw-app-str": { "optional": true },
-    "@ledgerhq/hw-transport-webhid": { "optional": true },
-    "@ledgerhq/hw-transport-webusb": { "optional": true }
+    "albedo-wallet-sdk": {
+      "optional": true
+    },
+    "@ledgerhq/hw-app-str": {
+      "optional": true
+    },
+    "@ledgerhq/hw-transport-webhid": {
+      "optional": true
+    },
+    "@ledgerhq/hw-transport-webusb": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "jsdom": "^24.0.0",
