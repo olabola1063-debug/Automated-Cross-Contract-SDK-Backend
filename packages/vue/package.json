@@ -1,7 +1,7 @@
 {
   "name": "@soroban-resurrect/vue",
   "version": "0.1.0",
-  "description": "Vue composable & plugin for @soroban-resurrect/sdk — pre-flight state restoration for Soroban dApps",
+  "description": "Vue composable & plugin for @soroban-resurrect/sdk \u2014 pre-flight state restoration for Soroban dApps",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -32,7 +32,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "node init && tsup"
   },
   "peerDependencies": {
     "@soroban-resurrect/sdk": "^0.1.0",

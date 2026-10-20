@@ -1,7 +1,7 @@
 {
   "name": "@soroban-resurrect/react-native",
   "version": "0.1.0",
-  "description": "React Native bindings for @soroban-resurrect/react — Hermes-compatible, no DOM/window dependency",
+  "description": "React Native bindings for @soroban-resurrect/react \u2014 Hermes-compatible, no DOM/window dependency",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -41,8 +41,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch",
+    "build": "node init && tsup",
+    "build:watch": "node init && tsup --watch",
     "prepublishOnly": "npm run build",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
