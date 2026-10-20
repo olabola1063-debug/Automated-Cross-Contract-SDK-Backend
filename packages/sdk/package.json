@@ -1,7 +1,7 @@
 {
   "name": "@soroban-resurrect/sdk",
   "version": "0.1.0",
-  "description": "Automated cross-contract state restoration SDK for Soroban — detects archived ledger entries and seamlessly restores them before executing transactions",
+  "description": "Automated cross-contract state restoration SDK for Soroban \u2014 detects archived ledger entries and seamlessly restores them before executing transactions",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -40,12 +40,12 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch",
+    "build": "node init && tsup",
+    "build:watch": "node init && tsup --watch",
     "prepublishOnly": "npm run build",
     "test": "vitest run",
     "test:watch": "vitest",
-    "dev:test": "vitest --watch --reporter=verbose",
+    "dev:test": "node init && vitest --watch --reporter=verbose",
     "test:coverage": "vitest run --coverage",
     "test:integration": "vitest run --config vitest.integration.ts",
     "test:property": "vitest run tests/property",

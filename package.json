@@ -24,10 +24,10 @@
     "packages/react-native"
   ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "build:sdk": "npm run build -w packages/sdk",
-    "build:react": "npm run build -w packages/react",
-    "build:wallet-adapters": "npm run build -w packages/wallet-adapters",
+    "build": "node init && npm run build --workspaces",
+    "build:sdk": "node init && npm run build -w packages/sdk",
+    "build:react": "node init && npm run build -w packages/react",
+    "build:wallet-adapters": "node init && npm run build -w packages/wallet-adapters",
     "test": "npm run test --workspaces --if-present",
     "test:coverage": "npm run test:coverage --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",

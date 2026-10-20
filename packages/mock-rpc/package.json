@@ -1,7 +1,7 @@
 {
   "name": "@soroban-resurrect/mock-rpc",
   "version": "0.1.0",
-  "description": "Lightweight deterministic mock RPC server for Soroban unit testing — pre-record/replay, network simulation, TTL expiry",
+  "description": "Lightweight deterministic mock RPC server for Soroban unit testing \u2014 pre-record/replay, network simulation, TTL expiry",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -39,8 +39,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch",
+    "build": "node init && tsup",
+    "build:watch": "node init && tsup --watch",
     "prepublishOnly": "npm run build",
     "test": "vitest run",
     "test:watch": "vitest",
