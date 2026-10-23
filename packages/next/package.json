@@ -1,7 +1,7 @@
 {
   "name": "@soroban-resurrect/next",
   "version": "0.1.0",
-  "description": "Server-compatible (RSC / server action) utilities for @soroban-resurrect/sdk — no window dependency",
+  "description": "Server-compatible (RSC / server action) utilities for @soroban-resurrect/sdk \u2014 no window dependency",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -38,8 +38,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch",
+    "build": "node init && tsup",
+    "build:watch": "node init && tsup --watch",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
